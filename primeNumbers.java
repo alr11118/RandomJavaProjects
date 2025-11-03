@@ -14,14 +14,18 @@ public class primeNumbers {
         return(isPrime);
     }
     public static void main(String[] args) {
+        String primeNumbersBeforeNumber = "";
         Scanner myObj = new Scanner(System.in);  // Create a Scanner object
         System.out.println("Enter number");
         int number = myObj.nextInt();  // Read user input
         myObj.close(); //Close scaner
         System.out.println("You entered: " + number); // print the value
 
-        System.out.println(check(5));
-        //something
-
+        for (int i = 2; i <= number; i++){
+            if (check(i)==true){
+                primeNumbersBeforeNumber += (i + " "); 
+            }
+        }
+        System.out.println("The prime numbers before " + number + " is " + primeNumbersBeforeNumber);
     }
 }
