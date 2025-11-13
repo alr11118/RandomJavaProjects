@@ -30,5 +30,5 @@ public class primeNumbers {
         }
         // Prints the resaults
         System.out.println("The prime numbers before " + number + " is " + primeNumbersBeforeNumber);
-    }//texting
+    }
 }
